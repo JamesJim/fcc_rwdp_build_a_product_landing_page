@@ -1,0 +1,105 @@
+/* main.css */
+
+/******* LAYOUT *********/
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+}
+
+#header {
+  border: solid;
+  display: flex;
+  flex-direction: column;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+}
+
+#nav-ul {
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#features-container {
+
+}
+
+#how-theyre-made-container {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+#pricing-container {
+
+}
+
+.pricing-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+section {
+  border: solid;
+}
+
+#footer {
+  border: solid;
+}
+
+/*********  STYLE  *********/
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 3px;
+}
+
+#nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  padding: 5px 0;
+}
+
+.pricing-div {
+  border: solid;
+}
+
+.pricing-div h3 {
+  background-color: lightgray;
+  border: solid;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    color: blue;
+  }
+
+  #how-theyre-made-container {
+  }
+
+}
