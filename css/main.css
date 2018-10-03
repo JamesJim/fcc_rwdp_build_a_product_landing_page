@@ -19,7 +19,7 @@ main {
   flex-direction: column;
 }
 
-#title {
+#title-div {
   display: flex;
   justify-content: center;
 }
@@ -72,7 +72,38 @@ h1, h2, h3, h4, h5, p {
 }
 
 body {
+  font-size: 18px;
   padding: 3px;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+}
+
+main {
+  flex-grow: 1;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+section {
+  padding: 5px;
+}
+
+#header {
+  flex-shrink: 0;
+  display: inline-flex;
+}
+
+#title-div {
+  padding: 5px;
+}
+
+#header-img {
+  align-self: center;
+  height: 30px;
+  width: 30px;
+  margin-right: 3px;
+  color: #ff9900;
 }
 
 #nav-ul {
@@ -81,25 +112,155 @@ body {
   padding: 0;
 }
 
-.nav-link {
-  padding: 5px 0;
+.nav-li {
+  padding: 5px;
+}
+
+.nav-li a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+a:hover {
+  color: #ff9900;
+}
+
+#form-container {
+  padding: 25px 0;
+}
+
+#form-container h1, input{
+  margin: 5px;
+}
+
+#email {
+  width: 60%;
+}
+
+#submit {
+  border-radius: 2px;
+  background-color: #ffcc00;
+}
+
+#submit:hover {
+  background-color: #ff9900;
+}
+
+#features-container {
+  padding: 15px 10px;
+}
+
+.features-div {
+  margin: 25px 0;
+}
+
+.features-check {
+  display: none;
+}
+
+#pricing-container {
+  padding: 15px 0;
 }
 
 .pricing-div {
-  border: solid;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: 25px 30px;
 }
 
 .pricing-div h3 {
   background-color: lightgray;
-  border: solid;
+  /* border: solid; */
 }
 
-@media screen and (min-width: 600px) {
-  h1 {
-    color: blue;
+.pricing-div h4 {
+  margin: 5px 0;
+}
+
+.pricing-div p {
+  display: flex;
+  justify-content: center;
+  padding: 0 75px;
+}
+
+.button {
+  background-color: #ffcc00;
+  border-radius: 2px;
+  width: 100px;
+  height: 30px;
+  margin: 5px 0;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: #ff9900;
+}
+
+#footer {
+  padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+
+  /******* LAYOUT *******/
+
+  #header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #nav-ul {
+    flex-direction: row;
   }
 
   #how-theyre-made-container {
   }
+
+  .features-div {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .features-check {
+    background-image: url(/images/check.png);
+    background-position: center;
+    background-size: cover;
+    width: 10%;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  #header {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .nav-li {
+    font-size: 1.5em;
+    padding: 0 8px;
+  }
+
+  #email {
+    width: 40%;
+  }
+
 
 }

@@ -8,38 +8,43 @@
 </head>
 <body>
   <header id="header">
-    <h1 id="title">
-      <img id="header-img" src="https://png2.kisspng.com/sh/dd0fd919c151c0385e383962076c3368/L0KzQYm3VMIzN5htfZH0aYP2gLBuTfdmaaMyiAJ7b3PudcW0gBxqeF5miuY2Z3XkgsS0lvVkfJD3RadqZHSzSIXrVvE6bWI2Rqc9NEe0Q4WCUcUzPGU4TaI7MUS2Roi1kP5o/kisspng-gear-sprocket-clip-art-gears-vector-5add084d6a9e11.5447134915244350214367.png" alt="Image of sprocket" height="40" width="40">
-      Elite Sprockets</h1>
+    <div id="title-div">
+      <img id="header-img" src="images/sprocket.jpg" alt="Image of sprocket" height="40" width="40">
+      <h1 id="title">Elite Sprockets</h1>
+    </div>
     <nav id="nav-bar">
       <ul id="nav-ul">
-        <li class="nav-link"><a href="#features-container">Features</a></li>
-        <li class="nav-link"><a href="#how-theyre-made-container">How They're Made</a></li>
-        <li class="nav-link"><a href="#pricing-container">Pricing</a></li>
+        <li class="nav-li"><a class="nav-link" href="#features-container">Features</a></li>
+        <li class="nav-li"><a class="nav-link" href="#how-theyre-made-container">How They're Made</a></li>
+        <li class="nav-li"><a class="nav-link" href="#pricing-container">Pricing</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section id="form-container">
-      <form id="form">
+      <form id="form" action="https://www.freecodecamp.com/email-submit"
+      method="get">
         <h1>Super Awesome Precision-Crafted Sprockets</h1>
-        <input id="email" type="email" placeholder="Enter your email address"><br>
-        <input type="submit" value="Get Started" onclick="location.href='https://www.freecodecamp.com/email-submit';">
+        <input id="email" name="email" type="email" placeholder="Enter your email address"><br>
+        <input id="submit" type="submit" value="Get Started">
       </form>
     </section>
 
     <section id="features-container">
-      <div>
-        <h2>Premium Materials</h2>
-        <p>Our sprockets are made from the strongest materials the world has ever seen.</p>
+      <div class="features-div">
+        <figure class="features-check"></figure>
+        <div class="after-features-img">
+          <h2>Premium Materials</h2>
+          <p>Our sprockets are made from the strongest materials the world has ever seen.</p>
+        </div>
       </div>
-      <div>
+      <div class="features-div">
         <h2>Fast Shipping</h2>
         <p>You'll receive your sprockets so fast it'll make your head spin.</p>
       </div>
-      <div>
+      <div class="features-div">
         <h2>Quality Assurance</h2>
-        <p>We thoroughly inspect every single widget so you can be confident you're buying the best sprocket ever made.</p>
+        <p>We thoroughly inspect every single sprocket so you can be confident you're buying the best sprocket ever made.</p>
       </div>
     </section>
 
@@ -54,7 +59,10 @@
         <h3>Small Sprocket</h3>
         <h4>$100</h4>
         <p>
-          Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.
+          Lorem ipsum.<br>
+          Lorem ipsum.<br>
+          Lorem ipsum dolor.<br>
+          Lorem ipsum.<br>
         </p>
         <div class="button">Select</div>
       </div>
@@ -63,7 +71,10 @@
         <h3>Medium Sprocket</h3>
         <h4>$200</h4>
         <p>
-          Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.
+          Lorem ipsum.<br>
+          Lorem ipsum.<br>
+          Lorem ipsum dolor.<br>
+          Lorem ipsum.<br>
         </p>
         <div class="button">Select</div>
       </div>
@@ -72,15 +83,20 @@
         <h3>Large Sprocket</h3>
         <h4>$300</h4>
         <p>
-          Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.
+          Lorem ipsum.<br>
+          Lorem ipsum.<br>
+          Lorem ipsum dolor.<br>
+          Lorem ipsum.<br>
         </p>
         <div class="button">Select</div>
+
       </div>
     </section>
-  </main>
   <footer id="footer">
     &copy Copyright Elite Sprockets 2018
   </footer>
+  </main>
+
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
