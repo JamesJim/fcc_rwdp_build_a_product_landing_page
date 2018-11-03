@@ -1,7 +1,8 @@
 # fcc_rwdp_build_a_product_landing_page
-Free Code Camp - Responsive Web Design Projects - Build A Product Landing Page
 
-Responsive Web Design Projects - Build a Product Landing Page
+COMPLETED PROJECT: https://jamesjim.github.io/fcc_rwdp_build_a_product_landing_page/
+
+Free Code Camp - Responsive Web Design Projects - Build A Product Landing Page
 
 Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/RKRbwL.
 
@@ -44,5 +45,5 @@ You can build your project by forking this CodePen pen. Or you can use this CDN 
 Once you're done, submit the URL to your working project with all its tests passing.
 Remember to use the Read-Search-Ask method if you get stuck.
 
-COMPLETED PROJECT:  https://jamesjim.github.io/fcc_rwdp_build_a_product_landing_page/
+
 
